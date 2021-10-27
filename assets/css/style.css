@@ -361,6 +361,17 @@ footer a:hover {
 footer p {
     padding: 0 0 10px 0;
 }
+.scale {
+    /* display: inline-block; Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .scale img {
+    transition: 1s; /* Время эффекта */
+    /* display: block; Убираем небольшой отступ снизу */
+   }
+   .scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
 
 /* CSS Mobile */
 
@@ -511,4 +522,4 @@ and (max-device-width : 568px) {
     .send textarea {
         width: 85%;
     }
-}
+  
